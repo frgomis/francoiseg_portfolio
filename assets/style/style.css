@@ -30,13 +30,16 @@ html {
    --borderAuto2: #eb008a solid 1px;
    /* text color */
    --text-color: rgb(105, 0, 105);
+   --white: #fff;
 }
 body{
+    max-width: 375px;
+    margin: 0 auto;
     font-family: var(--font-family-text);
     font-size: var(--font-size-text);
 }
+
 h1,h2,h3,h4,h5{
-    max-width: 375px;
     font-family:var(--font-family-title);
     color:var(--text-color);
     font-weight: var(--extrabold);
@@ -62,27 +65,23 @@ header{
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    background:linear-gradient(45deg,#ffd0dbdc, #fa819edc);
 }
-.container_cards{
-    /* background:linear-gradient(135deg, #f8dad9, #ffd0dbdc); */
+div.intro{
+    width: 45%;
+    height: 55%;
+    /* border-radius: 0 30% 0 30%;  */
+    margin: 0 auto;
+    background-size: cover;
 }
-/* +++++++div.photo+++++ */
-/* div.photo{
-    width: 50%;
-    height: 70%;
-    padding: 5%;
-    display: block;
-    justify-content: center;
+.intro img{
+    border-radius:50%; 
 }
-div.photo img{
-    border-radius: 0 30% 0 30%;
-} */
-
 /* xxxxxxxxxx MAIN - MAIN xxxxxxxxxx */
 main{
     margin: 0 auto;
     background-color: #fff;
-    max-width: 375px;
+    /* max-width: 767px; */
 }
 main section{
     width: 95%;
@@ -95,8 +94,7 @@ main section > h2{
 
 /* +++++++SECTION.APROPOS++++++++++++++++++++++++++++++ */
 /* -----div.portrait-presentation-------------- */
-.apropos div.portrait-presentation{
-    /* max-height: 75vh; */
+div.portrait-presentation{
     border-radius: 8px;
     padding: 3% 3%;
     background:linear-gradient(-135deg, rgb(248, 218, 217, 0.35), rgba(255, 208, 219, 0.563));
@@ -108,8 +106,8 @@ main section > h2{
     text-align: justify;
 }
 div.portrait{
-    width: 55%;
-    height: 25%;
+    width: 45%;
+    height: 55%;
     border-radius: 0 30% 0 30%; 
     margin: 0 auto;
     margin-bottom: 10%;
@@ -133,7 +131,7 @@ div.presentation ul li > span{
 div.presentation p br{
     margin-bottom: 2.55%;
 }
-/* +++SECTION.PROJETS+++ */
+/* +++SECTION.PROJETS++++++++++++++++++++++++++++++ */
 section.projet>div:not(div:first-child){
     box-shadow: 1px  1px 5px rgba(235, 0, 138, 0.25);
     margin: 1.5% auto;
@@ -153,6 +151,12 @@ div.certificatIntegratrice:hover{
     /* 4px 4px 5px  */
     transition: all 0.3s ease;
 }
+.certificatIntegratrice figcaption:hover{
+    color:var(--white);
+    font-weight: var(--extrabold);
+    background-color: #eb008a;
+}
+
 .projet>div>figure>figcaption,
 .certificatIntegratrice figcaption{
     background:linear-gradient(-135deg, rgb(248, 218, 217, 0.35), rgba(255, 208, 219, 0.763));
@@ -176,8 +180,6 @@ div.certificatIntegratrice:hover{
         transform: translateY(-7.5px);
     }
 }
-
-/* --------------------------------------------- */
 /* -----div.experiencePro-------------- */
 h3.subtitle{
     text-align: left;
@@ -252,13 +254,12 @@ div.arrow span:nth-child(2){
     }
 }
 
-/* -- xxxxxxx NAV.DOWN-MENU XXXXXXXX  */
+/* -- +++++ NAV.DOWN-MENU ++++++++++++++++++++++++++++++  */
 nav.down-menu{
     width: 100%;
     padding: 3.5%;
     margin: 2.5% auto;
-    background:linear-gradient(-535deg, #fff, #ffd0dbdc);
-    /* background-color: #fedbe3; */
+    background:linear-gradient(-90deg,#ffd0dbdc, #fa819edc);
     color:var(--white);
     font-weight: 900 ;
     display: flex;
@@ -281,65 +282,3 @@ nav.down-menu{
     line-height: 50%;
     height: 50%;
 }
-
-
-/* +++++++++++++++++++++++++++++++++++++ */
-
-/*  ------- VERSIONS DESKTOP ------- */
-
-@media screen and (min-width : 768px) {
-
-    body {
-        border: #e996c6 3px solid;
-        max-width: 80%;
-        width: 100%;
-        margin: 0 auto;
-        display: grid;
-        grid-template: 1fr 1fr 1fr/ 1fr 1fr;
-        
-    }
-    header{
-        width: 100%;
-    }
-
-    div.portrait {
-        /* width: 33%;
-        height: 10%; */
-    }
-
-    .container_cards {
-        margin: 0 auto;
-        background-color: #fff;
-    }
-
-    /* section.apropos */
-
-    
-/* section.projet */
-    section.projet {
-        border: var(--borderAuto1);
-        margin: 0 auto;
-    }
-
-    .projet>div {
-        width: 35%;
-        height: 50%;
-    }
-
-    .projet:not(div:first-child) {
-        border: var(--borderAuto2);
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0;
-        padding: 0;
-    }
-}
-
-/*  ------- VERSIONS TABLETTE ------- */
-
-/* @media screen and (min-width: 720px) and (orientation:landscape) {
-    body { */
-        /* border: var(--borderAuto); */
-        /* background-color:#eee;
-        margin: 0 auto;
-    } */
