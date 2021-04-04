@@ -68,15 +68,19 @@ header{
     background:linear-gradient(45deg,#ffd0dbdc, #fa819edc);
 }
 div.intro{
-    width: 45%;
+    width: 35%;
     height: 55%;
-    /* border-radius: 0 30% 0 30%;  */
-    margin: 0 auto;
+    margin: 2.5% auto;
     background-size: cover;
 }
 .intro img{
     border-radius:50%; 
 }
+ul.for_desktop{
+    visibility: hidden;
+    height: 0;
+}
+
 /* xxxxxxxxxx MAIN - MAIN xxxxxxxxxx */
 main{
     margin: 0 auto;
