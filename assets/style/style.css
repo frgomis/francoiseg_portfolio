@@ -123,9 +123,11 @@ div.portrait img{
  }
 div.presentation span{
     font-weight: var(--extrabold);
+    text-transform: uppercase;
 }
 div.presentation ul{
-    margin: 4.5% 0;
+    margin: 3.5% 5%;
+    line-height: 0.5rem;
 }
 div.presentation ul li{
     margin-bottom: 2.55%;
@@ -148,23 +150,25 @@ figure.projets{
     display: block;
     text-align: center;
 }
+div.flexbox-grid:hover,
 div.certificatIntegratrice:hover{
-    border:rgb(235, 0, 138, 0.5) groove 1px;
+    border:rgb(235, 0, 138, 0.8) groove 2px;
     background-color: var(--white);
     box-shadow:10px 20px 10px rgba(235, 0, 138, 0.25);
-   --borderAuto2: green solid 1.5px;
     /* 4px 4px 5px  */
     transition: all 0.3s ease;
 }
+div.flexbox-grid:hover,
 .certificatIntegratrice figcaption:hover{
     color:var(--white);
     font-weight: var(--extrabold);
-    background-color: #eb008a;
+    background-color: #ff0095;
 }
 
 .projet>div>figure>figcaption,
+
 .certificatIntegratrice figcaption{
-    background:linear-gradient(-135deg, rgb(248, 218, 217, 0.35), rgba(255, 208, 219, 0.763));
+    background:linear-gradient(-135deg, rgb(248, 218, 217, 1), rgba(255, 208, 219, 0.763));
     color: rgb(105, 0, 105);
     font-size: 1.5rem;
     font-weight: 700;
@@ -172,6 +176,7 @@ div.certificatIntegratrice:hover{
     text-align: center;
 }
 /* ------------------------------------------------ */
+div.flexbox-grid:hover,
 .certificatIntegratrice:hover {
     animation: bounce 0.500s;
     animation-direction: alternate;
@@ -279,7 +284,7 @@ nav.down-menu{
    width: 13.5%;
    height:22%;
 }
-.hamburger span{
+.hamburger>span{
     border : #fff 2px solid;
     border-radius: 100%;
     margin-bottom: 15%;

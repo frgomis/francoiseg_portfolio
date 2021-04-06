@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 	<meta name=description content="Portfolio - ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="keyword" content="portfolio, web, developper, developpeuse,html, js, javascript, jquery, bootstrap, flexbox, grid,responsive">
+	<meta name="keyword" content="portfolio, web, developper, developpeuse, html, js, javascript, jquery, bootstrap, flexbox, grid,responsive">
     <title>FG | Portfolio v2</title>
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/style/mediasqueries.css">
@@ -17,7 +17,7 @@
     <!--  xxxxxxx HEADER xxxxxxx -->
     <header class="container">
         <div class="intro">
-            <img src="assets/img/imgportfolio/francoise_animations.gif">
+            <img src="assets/img/imgportfolio/francoise_animations.gif" alt="portrait FrançoiseG">
 
             <ul class="for_desktop"> 
                 <li><a href="#">A propos</a></li>
@@ -37,20 +37,24 @@
                     <img src="assets/img/portrait_FrancoiseGo.png" alt="portrait d'une développeuse">
                 </div>
                 <div class="presentation">
-                    <p class="apropos">Je m'appelle Françoise, je suis en reconversion dans le métier passionnant,
+                    <p class="apropos">Je m'appelle <span>Françoise</span>, je suis en reconversion dans le métier passionnant,
                         foisonnant et bouillonnant de<span> développeuse web</span>, depuis 1 an.</p>
                     <ul>
-                        <li><span>Ex-Assistante de formation,</span></li>
-                        <li><span>Ex-Gestionnaire de paie,</span></li>
-                        <li><span>Néo-Dév front,</span></li>
-                        <li><span> et aussi Néo-quinqua....</span></li>
+                        <li>Ex-Assistante de formation,</li>
+                        <li>Ex-Gestionnaire de paie,</li>
+                        <li>Néo-Dév front,</li>
+                        <li>et aussi Néo-quinqua....</span></li>
                     </ul>
-                    <p>Mes nouveaux amis s'appellent Github, Flexbox, Grid, Javascript, Angular...et j'ai envie de participer à la création de beaux sites responsives, bien codés et conformes au W3C.</p> <br>
-                    </div>
+                    <p>Mes nouveaux amis s'appellent <span> Github, Flexbox, Grid, Javascript, Angular... </span>J'ai envie de
+                        participer à la création de beaux sites responsives, bien codés et conformes au W3C.</p> <br>
                 </div>
             </div>
+            </div>
+        </section>
 
-            <h3 class="subtitle">Expériences</h3>
+        <!-- SECTION.EXPERIENCES ++++++++++++++++++++ -->
+        <section>
+            <h2 class="subtitle">Expériences</h2>
             <div class="experiences">
                 <div class="item1">
                     <h4><a href="experiences.html">Développeuse Front-end</a></h4>
@@ -64,7 +68,7 @@
                     <h4><a href="experiences.html">Développeuse WordPress</a></h4>
                 </div>
                 <div class="item3">
-                    <h4><a href="experiences.html">Gestionnaire de paie</a></h4> 
+                    <h4><a href="experiences.html">Gestionnaire de paie</a></h4>
                 </div>
                 <div class="item4">
                     <h4><a href="experiences.html"> Assistante de formation</a></h4>
@@ -81,13 +85,12 @@
                          alt="visuel catalogue vente de gants de boxes">
                 </figure>
             </div>
-          <div class="flexbox-bootstrap">
+          <div class="flexbox-grid"><a href="projet.html" target="_blank" rel="noopener noreferrer"></a>
                 <figure class="projets">
                     <figcaption>Flexbox - Grid</figcaption>
-                    <img src="assets/img/design/maquette-oiseaux.png"
-                         alt="visuel catalogue vente de gants de boxes">
-                   
-                </figure>
+                    <img src="assets/img/design/challenge-frontend.jpg"
+                         alt="maquette frontend-mentor.io">
+                </figure></a>
             </div>
               <div class="js-jquery">
                 <figure class="projets">
@@ -110,11 +113,11 @@
         <!-- +++++++  NAV +++++++-->
         <footer>
             <nav class="down-menu">
-                <!-- <div class="item1-nav hamburger">
+                <div class="item1-nav hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div> -->
+            </div>
                 <div class="dropdown">
                     <div class="dropdown-select">
                         <span class="select"></span>

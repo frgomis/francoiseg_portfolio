@@ -1,9 +1,9 @@
 /*  ------- VERSIONS DESKTOP ------- */
 
-@media  (min-width : 768px)and (max-width: 1024px){
+@media  (min-width : 768px)and (max-width: 1400px){
 
     body {
-        max-width: 1024px;
+        max-width: 1400px;
         background-color: #e996c6;
         margin: 0 auto;
     }
