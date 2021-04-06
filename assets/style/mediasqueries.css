@@ -3,7 +3,7 @@
 @media  (min-width : 768px)and (max-width: 1024px){
 
     body {
-        max-width: 1200px;
+        max-width: 1024px;
         background-color: #e996c6;
         margin: 0 auto;
     }
