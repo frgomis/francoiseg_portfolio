@@ -1,35 +1,40 @@
 /*  ------- VERSIONS DESKTOP ------- */
 
-@media (min-width : 768px)and (max-width: 1400px) {
+@media (min-width : 768px)and (max-width: 1200px) {
 
     body {
-        max-width: 1400px;
-        background-color: #e996c6;
+        max-width: 1200px;
+        /* background-color: pink; */
         margin: 0 auto;
     }
 
     header,
     section,
-    footer {
-        width: 100%;
+    footer,
+    main{
+        width: 75%;
         height: auto;
     }
 
     header {
-        border: 2.5px solid #eb008a;
-        max-width: 500px;
+        /* border: 2.5px solid #eb008a; */
+        max-width: 1200px;
         background: linear-gradient(+45deg, #ffd0dbdc, #fa819edc);
+      
     }
 
     div.intro {
         width: 15%;
         /* height: 55%; */
         margin-left: 8%;
+        display: flex;
+        align-items: center;
     }
+
 
     ul.for_desktop {
         /* border:#eb008a 1px solid; */
-        visibility: visible;
+        visibility: hidden;
         height: 10%;
         display: flex;
         justify-content: center;
@@ -39,7 +44,7 @@
     section.apropos {
         /* border: 2.5px solid #eb008a; */
         max-width: 500px;
-        max-width: 500px;
+        max-width: 
     }
     section.exper {
         max-width: 80%;
@@ -61,8 +66,8 @@
     }
 
     footer {
-        border: 2.5px solid #fa819edc;
-        max-width: 500px;
+        /* border: 2.5px solid #fa819edc; */
+        max-width: 1200px;
         margin: 0 auto;
 
     }

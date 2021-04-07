@@ -27,7 +27,7 @@ html {
     --extrabold:900;
    /* borders */
    --borderAuto1: chartreuse solid 2px;
-   --borderAuto2: #eb008a solid 1px;
+   /* --borderAuto2: #eb008a solid 1px; */
    /* text color */
    --text-color: rgb(105, 0, 105);
    --white: #fff;
@@ -106,7 +106,7 @@ div.portrait-presentation{
     font-family: var(--font-family-text);
     font-weight:var(--medium);
     color: var(--text-color);
-    line-height: 2rem;
+    line-height: 2.5rem;
     letter-spacing: 0.01rem;
     text-align: justify;
 }
@@ -122,12 +122,12 @@ div.portrait img{
    border-radius: 30% 0 30% 0;
  }
 div.presentation span{
-    font-weight: var(--extrabold);
+    font-weight: var(--bold);
     text-transform: uppercase;
 }
 div.presentation ul{
     margin: 3.5% 5%;
-    line-height: 0.5rem;
+    line-height: 1.3rem;
 }
 div.presentation ul li{
     margin-bottom: 2.55%;
@@ -167,19 +167,20 @@ div.flexbox-grid figcaption:hover,
 }
 
 .projet>div>figure>figcaption,
-
+.flexbox-grid figure figcaption,
 .certificatIntegratrice figcaption{
     background:linear-gradient(-135deg, rgb(248, 218, 217, 1),
      rgba(255, 208, 219, 0.763));
     color: rgb(105, 0, 105);
     font-size: 1.9rem;
-    font-weight: 900;
+    font-weight: 600;
     padding: 2.5% 0;
     text-align: center;
 }
 /* ------------------------------------------------ */
 .flexbox-grid:hover,
 .certificatIntegratrice:hover {
+    font-weight: 900;
     animation: bounce 0.500s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
