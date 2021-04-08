@@ -86,7 +86,7 @@ ul.for_desktop{
 main{
     margin: 0 auto;
     background-color: #fff;
-    /* max-width: 767px; */
+    padding-bottom: 1px;
 }
 main section{
     width: 95%;
@@ -141,11 +141,16 @@ div.presentation p br{
 /* +++SECTION.PROJETS++++++++++++++++++++++++++++++ */
 section.projet>div:not(div:first-child){
     box-shadow: 1px  1px 5px rgba(235, 0, 138, 0.25);
-    margin: 1.5% auto;
+    margin: 6.5% auto;
     height: auto;
     border-radius: 8px;
     overflow: hidden;   
 }
+.certificatIntegratrice{
+    margin-bottom: 6.5%;
+}
+
+
 figure.projets{
     display: block;
     text-align: center;
@@ -156,7 +161,8 @@ div.certificatIntegratrice:hover{
     border:rgb(235, 0, 138, 0.8) groove 2px;
     color: var(--white);
     box-shadow:10px 20px 10px rgba(235, 0, 138, 0.25);
-    /* 4px 4px 5px  */
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
     transition: all 0.3s ease;
 }
 div.flexbox-grid figcaption:hover,
@@ -170,7 +176,7 @@ div.flexbox-grid figcaption:hover,
 .flexbox-grid figure figcaption,
 .certificatIntegratrice figcaption{
     background:linear-gradient(-135deg, rgb(248, 218, 217, 1),
-     rgba(255, 208, 219, 0.763));
+    rgba(255, 208, 219, 0.763));
     color: rgb(105, 0, 105);
     font-size: 1.9rem;
     font-weight: 600;
@@ -186,11 +192,11 @@ div.flexbox-grid figcaption:hover,
     animation-iteration-count: infinite;
 }
 @keyframes bounce {
-    0% {
-        transform: translateX(2.5px);
+   0% {
+        transform: translateY(-3.5px);
     }
-    100% {
-        transform: translateY(-7.5px);
+   100% {
+        transform: translateY(7.5px);
     }
 }
 /* -----div.experiencePro-------------- */
@@ -213,12 +219,13 @@ div.experiences .item1,
 div.experiences .item2,
 div.experiences .item3,
 div.experiences .item4{
+    width: 100%;
     background:linear-gradient(-135deg, rgb(248, 218, 217, 0.35), rgba(255, 208, 219, 0.763));
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    padding: 5%; 
+    
 }
 div.experiences .item1{
     display: flex;
@@ -227,7 +234,7 @@ div.experiences .item1{
 }
 div.experiences > div > h4{
     padding:15% 0;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 /* ARROW */
 div.arrow {
@@ -267,13 +274,15 @@ div.arrow span:nth-child(2){
     }
 }
 
-/* -- +++++ NAV.DOWN-MENU ++++++++++++++++++++++++++++++  */
+/* -- +++++ FOOTER  ++++++++++++++++++++++++++++++  */
+footer{
+    height: 30%;
+}
 nav.down-menu{
     width: 100%;
-    padding: 3.5%;
-    margin: 2.5% auto;
+    padding: 2.5% 3.5%;
+    margin: 0 auto;
     background:linear-gradient(-90deg,#ffd0dbdc, #fa819edc);
-    color:var(--white);
     font-weight: 900 ;
     display: flex;
     align-items: center;
@@ -281,7 +290,8 @@ nav.down-menu{
     justify-content: space-around;
 }
 .item4-nav{
-    width: 13.5%;
+    width: 48px;
+    height: 52px;
 }
 .hamburger{
    width: 13.5%;
