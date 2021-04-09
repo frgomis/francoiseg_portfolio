@@ -2,7 +2,7 @@
     const menuBtn = document.querySelector(".toggle-btn");
     console.log(menuBtn);
     // 2- on écoute le clique sur la div.toggle-btn
-    menuBtn.addEventListener("click", function(){
+    menuBtn.addEventListener('click', function(){
         document.getElementById("sidebar").classList.toggle("active");
     })
 
