@@ -101,7 +101,7 @@ main section > h2{
 /* -----div.portrait-presentation-------------- */
 div.portrait-presentation{
     border-radius: 8px;
-    padding: 3% 3%;
+    padding: 3% 7%;
     background:linear-gradient(-135deg, rgb(248, 218, 217, 0.35), rgba(255, 208, 219, 0.563));
     font-family: var(--font-family-text);
     font-weight:var(--medium);
