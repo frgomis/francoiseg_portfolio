@@ -6,6 +6,7 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
+    /* border: green 1px solid; */
 }
 html {
     font-size: 62.5%;
@@ -38,6 +39,7 @@ body{
     margin: 0 auto;
     font-family: var(--font-family-text);
     font-size: var(--font-size-text);
+    
 }
 
 h1,h2,h3,h4,h5{
@@ -98,8 +100,8 @@ main section > h2{
 }
 
 /* +++++++SECTION.APROPOS++++++++++++++++++++++++++++++ */
-/* -----div.portrait-presentation-------------- */
 div.portrait-presentation{
+    width: 95%;
     border-radius: 8px;
     padding: 3% 7%;
     background:linear-gradient(-135deg, rgb(248, 218, 217, 0.35), rgba(255, 208, 219, 0.563));
@@ -138,67 +140,6 @@ div.presentation ul li > span{
 div.presentation p br{
     margin-bottom: 2.55%;
 }
-/* +++SECTION.PROJETS++++++++++++++++++++++++++++++ */
-section.projet>div:not(div:first-child){
-    box-shadow: 1px  1px 5px rgba(235, 0, 138, 0.25);
-    margin: 6.5% auto;
-    height: auto;
-    border-radius: 8px;
-    overflow: hidden;   
-}
-.certificatIntegratrice{
-    margin-bottom: 6.5%;
-}
-
-
-figure.projets{
-    display: block;
-    text-align: center;
-}
-
-div.flexbox-grid:hover,
-div.certificatIntegratrice:hover{
-    border:rgb(235, 0, 138, 0.8) groove 2px;
-    color: var(--white);
-    box-shadow:10px 20px 10px rgba(235, 0, 138, 0.25);
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-    transition: all 0.3s ease;
-}
-div.flexbox-grid figcaption:hover,
-.certificatIntegratrice figcaption:hover{
-    color:var(--white);
-    font-weight: var(--extrabold);
-    background-color: #ff0095;
-}
-
-.projet>div>figure>figcaption,
-.flexbox-grid figure figcaption,
-.certificatIntegratrice figcaption{
-    background:linear-gradient(-135deg, rgb(248, 218, 217, 1),
-    rgba(255, 208, 219, 0.763));
-    color: rgb(105, 0, 105);
-    font-size: 1.9rem;
-    font-weight: 600;
-    padding: 2.5% 0;
-    text-align: center;
-}
-/* ------------------------------------------------ */
-.flexbox-grid:hover,
-.certificatIntegratrice:hover {
-    font-weight: 900;
-    animation: bounce 0.500s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-}
-@keyframes bounce {
-   0% {
-        transform: translateY(-3.5px);
-    }
-   100% {
-        transform: translateY(7.5px);
-    }
-}
 /* -----div.experiencePro-------------- */
 h3.subtitle{
     text-align: left;
@@ -219,13 +160,12 @@ div.experiences .item1,
 div.experiences .item2,
 div.experiences .item3,
 div.experiences .item4{
-    width: 100%;
+    width: 95%;
     background:linear-gradient(-135deg, rgb(248, 218, 217, 0.35), rgba(255, 208, 219, 0.763));
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    
+    border-radius: 8px;
 }
 div.experiences .item1{
     display: flex;
@@ -271,6 +211,66 @@ div.arrow span:nth-child(2){
     100%{
         opacity: 0;
         transform: rotate(-45deg) translate(20px,20px);
+    }
+}
+
+/* +++SECTION.STACK++++++++++++++++++++++++++++++ */
+section.projet>div:not(div:first-child){
+    box-shadow: 1px  1px 5px rgba(235, 0, 138, 0.25);
+    margin: 6.5% auto;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;   
+}
+.certificatIntegratrice{
+    margin-bottom: 6.5%;
+}
+
+figure.projets{
+    display: block;
+    text-align: center;
+}
+div.flexbox-grid:hover,
+div.certificatIntegratrice:hover{
+    border:rgb(235, 0, 138, 0.8) groove 2px;
+    color: var(--white);
+    box-shadow:10px 20px 10px rgba(235, 0, 138, 0.25);
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    transition: all 0.3s ease;
+}
+div.flexbox-grid figcaption:hover,
+.certificatIntegratrice figcaption:hover{
+    color:var(--white);
+    font-weight: var(--extrabold);
+    background-color: #ff0095;
+}
+
+.projet>div>figure>figcaption,
+.flexbox-grid figure figcaption,
+.certificatIntegratrice figcaption{
+    background:linear-gradient(-135deg, rgb(248, 218, 217, 1),
+    rgba(255, 208, 219, 0.763));
+    color: rgb(105, 0, 105);
+    font-size: 1.9rem;
+    font-weight: 600;
+    padding: 2.5% 0;
+    text-align: center;
+}
+/* ------------------------------------------------ */
+.flexbox-grid:hover,
+.certificatIntegratrice:hover {
+    font-weight: 900;
+    animation: bounce 0.500s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+@keyframes bounce {
+   0% {
+        transform: translateY(-3.5px);
+    }
+   100% {
+        transform: translateY(7.5px);
     }
 }
 
