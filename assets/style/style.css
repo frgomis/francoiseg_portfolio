@@ -30,7 +30,9 @@ html {
    --borderAuto1: chartreuse solid 2px;
    /* --borderAuto2: #eb008a solid 1px; */
    /* text color */
-   --text-color: rgb(105, 0, 105);
+   /* --text-color: rgb(105, 0, 105); */
+   --text-color: #4f4f4f;
+
    --white: #fff;
 }
 body{
@@ -104,13 +106,14 @@ div.portrait-presentation{
     width: 95%;
     border-radius: 8px;
     padding: 3% 7%;
-    background:linear-gradient(-135deg, rgb(248, 218, 217, 0.35), rgba(255, 208, 219, 0.563));
+    margin: 0 auto;
     font-family: var(--font-family-text);
     font-weight:var(--medium);
     color: var(--text-color);
     line-height: 2.5rem;
     letter-spacing: 0.01rem;
     text-align: justify;
+    box-shadow:0px 2px 7.5px hsl(325, 100%, 46%, 0.15);
 }
 div.portrait{
     width: 45%;
@@ -119,6 +122,7 @@ div.portrait{
     margin: 0 auto;
     margin-bottom: 10%;
     background-size: cover;
+
 }
 div.portrait img{
    border-radius: 30% 0 30% 0;
@@ -251,11 +255,12 @@ div.flexbox-grid figcaption:hover,
 .certificatIntegratrice figcaption{
     background:linear-gradient(-135deg, rgb(248, 218, 217, 1),
     rgba(255, 208, 219, 0.763));
-    color: rgb(105, 0, 105);
+    color: var(--text-color);
     font-size: 1.9rem;
     font-weight: 600;
     padding: 2.5% 0;
     text-align: center;
+
 }
 /* ------------------------------------------------ */
 .flexbox-grid:hover,
@@ -298,7 +303,7 @@ nav.down-menu{
    height:22%;
 }
 .hamburger>span{
-    border : #fff 2px solid;
+    border : #f4f4f4 2px solid;
     border-radius: 100%;
     margin-bottom: 15%;
     display: block;
