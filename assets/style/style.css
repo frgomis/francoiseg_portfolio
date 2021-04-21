@@ -1,6 +1,8 @@
 @font-face{
     font-family:'Montserrat-Regular.ttf' ;
     src : url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-family: abril Fatface;
+    src:url(../fonts/AbrilFatface-Regular.ttf) format('truetype');
 }
 * {
     box-sizing: border-box;
@@ -14,7 +16,8 @@ html {
 }
 :root {
     /* fonts */
-    --font-family-title: "Nunito", Arial, Helvetica, sans-serif;
+    --font-family-title: 'Nunito', sans-serif;
+    --font-family-subtitle:"Abril Fatface", Arial, Helvetica, sans-serif;
     --font-family-text: "Montserrat", sans-serif;
     /* font-size */
     --font-size-title: 2rem;
@@ -41,13 +44,14 @@ body{
     margin: 0 auto;
     font-family: var(--font-family-text);
     font-size: var(--font-size-text);
-    
+    overflow-x:hidden;
 }
 
 h1,h2,h3,h4,h5{
     font-family:var(--font-family-title);
     color:var(--text-color);
     font-weight: var(--extrabold);
+    letter-spacing: 0.25rem;
 }
 li{
     list-style: none;
@@ -99,6 +103,7 @@ main section{
 main section > h2{
     padding: 5%; 
     text-transform: uppercase;
+    font-family: var(--font-family-subtitle);
 }
 
 /* +++++++SECTION.APROPOS++++++++++++++++++++++++++++++ */
