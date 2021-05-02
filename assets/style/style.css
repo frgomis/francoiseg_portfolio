@@ -1,8 +1,7 @@
 @font-face{
     font-family:'Montserrat-Regular.ttf' ;
     src : url('../fonts/Montserrat-Regular.ttf') format('truetype');
-    font-family: abril Fatface;
-    src:url(../fonts/AbrilFatface-Regular.ttf) format('truetype');
+    
 }
 * {
     box-sizing: border-box;
@@ -17,7 +16,7 @@ html {
 :root {
     /* fonts */
     --font-family-title: 'Nunito', sans-serif;
-    --font-family-subtitle:"Abril Fatface", Arial, Helvetica, sans-serif;
+    --font-family-subtitle:'Josefin Sans', sans-serif;
     --font-family-text: "Montserrat", sans-serif;
     /* font-size */
     --font-size-title: 2rem;
@@ -242,10 +241,10 @@ figure.projets{
 div.flexbox-grid:hover,
 div.certificatIntegratrice:hover{
     border:rgb(235, 0, 138, 0.8) groove 2px;
+    box-shadow: 1px  1px 5px rgba(235, 0, 138, 0.25);
     color: var(--white);
     box-shadow:10px 20px 10px rgba(235, 0, 138, 0.25);
     overflow-x: auto;
-    overscroll-behavior-x: contain;
     transition: all 0.3s ease;
 }
 div.flexbox-grid figcaption:hover,
@@ -265,7 +264,6 @@ div.flexbox-grid figcaption:hover,
     font-weight: 600;
     padding: 2.5% 0;
     text-align: center;
-
 }
 /* ------------------------------------------------ */
 .flexbox-grid:hover,
@@ -314,4 +312,21 @@ nav.down-menu{
     display: block;
     line-height: 50%;
     height: 50%;
+}
+div.copyright{
+    background-color: ;
+    width: 100%;
+    margin: 0 auto;
+    color:#fff;
+    font-weight: 700 ;
+   
+}
+.copyright ul{
+    width: 100%;
+    background:linear-gradient(-90deg,#ffd0dbdc, #fa819edc);
+    display: flex;
+    justify-content: center;
+}
+.copyright ul li{
+    margin-right: 20px;
 }
