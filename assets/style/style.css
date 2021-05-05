@@ -118,7 +118,7 @@ div.portrait-presentation{
     line-height: 2.5rem;
     letter-spacing: 0.01rem;
     text-align: justify;
-    border: hsl(325, 100%, 46%, 0.25) dotted 1.5px;
+    background: rgba(235, 0, 137, 0.056);
 }
 div.portrait-presentation:hover{
     border:none;
@@ -137,7 +137,10 @@ div.portrait{
 div.portrait img{
    border-radius: 30% 0 30% 0;
  }
-
+ div.portrait img:hover{
+     transition: 1s;
+   transform: scaleY(1) rotate(-360deg);
+  }
 div.presentation span{
     font-weight: var(--bold);
     text-transform: uppercase;
