@@ -123,8 +123,8 @@ div.portrait-presentation{
 div.portrait-presentation:hover{
     border:none;
     box-shadow:0px 2px 7.5px hsl(325, 100%, 46%, 0.55);
-    transition: 0.5s;
-    transform: scale(1.1);
+    transition: 0.9s;
+    transform: scale(1.085);
 }
 div.portrait{
     width: 45%;
@@ -138,7 +138,7 @@ div.portrait img{
    border-radius: 30% 0 30% 0;
  }
  div.portrait img:hover{
-     transition: 1s;
+    transition: 5s;
    transform: scaleY(1) rotate(-360deg);
   }
 div.presentation span{
