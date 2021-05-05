@@ -34,9 +34,10 @@ html {
    /* text color */
    /* --text-color: rgb(105, 0, 105); */
    --text-color: #4f4f4f;
-
    --white: #fff;
+   --myfunnypink:#eb008a;
 }
+
 body{
     min-width: 375px;
     max-width:767px ;
@@ -105,7 +106,7 @@ main section > h2{
     font-family: var(--font-family-subtitle);
 }
 
-/* +++++++SECTION.APROPOS++++++++++++++++++++++++++++++ */
+/* °°°°°°° SECTION.APROPOS °°°°°°°° */
 div.portrait-presentation{
     width: 95%;
     border-radius: 8px;
@@ -117,7 +118,13 @@ div.portrait-presentation{
     line-height: 2.5rem;
     letter-spacing: 0.01rem;
     text-align: justify;
-    box-shadow:0px 2px 7.5px hsl(325, 100%, 46%, 0.15);
+    border: hsl(325, 100%, 46%, 0.25) dotted 1.5px;
+}
+div.portrait-presentation:hover{
+    border:none;
+    box-shadow:0px 2px 7.5px hsl(325, 100%, 46%, 0.55);
+    transition: 0.5s;
+    transform: scale(1.1);
 }
 div.portrait{
     width: 45%;
@@ -126,11 +133,11 @@ div.portrait{
     margin: 0 auto;
     margin-bottom: 10%;
     background-size: cover;
-
 }
 div.portrait img{
    border-radius: 30% 0 30% 0;
  }
+
 div.presentation span{
     font-weight: var(--bold);
     text-transform: uppercase;
@@ -148,6 +155,11 @@ div.presentation ul li > span{
 div.presentation p br{
     margin-bottom: 2.55%;
 }
+.apropos a{
+    color:var(--myfunnypink);
+    font-weight: 600;
+}
+
 /* -----div.experiencePro-------------- */
 h3.subtitle{
     text-align: left;
@@ -222,7 +234,7 @@ div.arrow span:nth-child(2){
     }
 }
 
-/* +++SECTION.STACK++++++++++++++++++++++++++++++ */
+/* °°°°°°° SECTION.STACK °°°°°°° */
 section.projet>div:not(div:first-child){
     box-shadow: 1px  1px 5px rgba(235, 0, 138, 0.25);
     margin: 6.5% auto;
@@ -282,7 +294,7 @@ div.flexbox-grid figcaption:hover,
     }
 }
 
-/* -- +++++ FOOTER  ++++++++++++++++++++++++++++++  */
+/* -- xxxxxxxxxx FOOTER  xxxxxxxxxxx  */
 footer{
     height: 30%;
 }
